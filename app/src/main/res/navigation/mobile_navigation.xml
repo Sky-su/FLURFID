@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.flurfid.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.flurfid.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_supplierMainFragment"
+            app:destination="@id/supplierMainFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/bindDataFragment"
+        android:name="com.example.flurfid.ui.supplier.BindDataFragment"
+        android:label="fragment_bind_data"
+        tools:layout="@layout/fragment_bind_data" />
+    <fragment
+        android:id="@+id/supplierMainFragment"
+        android:name="com.example.flurfid.ui.supplier.SupplierMainFragment"
+        android:label="fragment_supplier_main"
+        tools:layout="@layout/fragment_supplier_main" >
+        <action
+            android:id="@+id/action_supplierMainFragment_to_bindDataFragment"
+            app:destination="@id/bindDataFragment" />
+        <action
+            android:id="@+id/action_supplierMainFragment_to_supplicerOutFragment"
+            app:destination="@id/supplicerOutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/supplicerOutFragment"
+        android:name="com.example.flurfid.ui.supplier.SupplicerOutFragment"
+        android:label="fragment_supplicer_out"
+        tools:layout="@layout/fragment_supplicer_out" >
+        <action
+            android:id="@+id/action_supplicerOutFragment_to_supplieroutinfoFragment"
+            app:destination="@id/supplieroutinfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/supplieroutinfoFragment"
+        android:name="com.example.flurfid.ui.supplier.SupplieroutinfoFragment"
+        android:label="fragment_supplieroutinfo"
+        tools:layout="@layout/fragment_supplieroutinfo" />
+
+</navigation>

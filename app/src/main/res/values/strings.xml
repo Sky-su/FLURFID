@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">FLURFID</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="main_confirm">确定</string>
+    <string name="main_Ruturn">返回</string>
+
+    <!-- 主页面参数-->
+    <string name="main_out">出库</string>
+    <string name="main_Plenish">补登</string>
+    <string name="main_Move">移库</string>
+    <string name="main_Putaway">收货</string>
+    <string name="main_Find">寻物</string>
+    <string name="main_Setting">设置</string>
+    <string name="main_BlueTooth">蓝牙</string>
+    <string name="main_Exit">退出</string>
+    <string name="main_newString">新任务</string>
+
+    <string-array name="Applicationprofiles">
+        <item>Supplier login</item>
+        <item>Fluor Login</item>
+    </string-array>
+    <string-array name="doors">
+        <item>请选择感应门</item>
+        <item>Door - 0170 - 003 - #2 - 1A</item>
+        <item>Door - 0170 - 003 - #2 - 2A</item>
+        <item>Door - 0170 - 003 - #2 - 3A</item>
+    </string-array>
+    <!-- 登录参数-->
+    <string name="login_Title">请输入用户名和密码</string>
+    <string name="login_User">用户名</string>
+    <string name="login_Password">密码</string>
+    <string name="login_Login">登录</string>
+    <string name="login_Exit">退出</string>
+    <string name="login_Applicationprofiles">Application profiles</string>
+    <!--供应商校验-->
+
+    <!--出库校验-->
+    <string name="edittext_title">请输入申请单号</string>
+    <string name="button_find">搜索</string>
+    <string name="button_scnner">扫描条形码</string>
+    <!--入库校验-->
+    <string name="string_id">入库编号:</string>
+    <string name="string_plantid">工厂编码:</string>
+
+    <string name="dialog_text">提醒</string>
+    <string name="dialog_in_check">是否确认入库？</string>
+    <!--移库页面-->
+    <string name="move_original">原库位：</string>
+    <string name="move_huowu">物资：</string>
+    <string name="move_muoriginal">目标库位：</string>
+    <string name="move_dataId">移库单号：</string>
+    <!-- 移库参数-->
+    <string name="move_id">库位号</string>
+    <string name="move_door">感应门号</string>
+
+    <!-- 出库参数-->
+    <string name="getoutorderText">发货单号</string>
+    <string name="getoutDoorText">感应门</string>
+    <string name="doorselectionText">请选择感应门</string>
+
+
+    <!-- RFID参数-->
+
+    <string name="connecting">尝试连接到扫描枪</string>
+    <string name="battery">设备电量</string>
+    <string name="cancel">取消</string>
+    <string name="err_title">错误</string>
+    <string name="label_read_total">已读</string>
+    <string name="load">功率</string>
+    <string name="no_reader">未连接到扫码枪</string>
+    <string name="no_start">启动失败，可能在充电</string>
+    <string name="ok">确定</string>
+    <string name="retry">重试？</string>
+    <string name="save">清空</string>
+    <string name="start">开始</string>
+    <string name="stop">停止</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>
