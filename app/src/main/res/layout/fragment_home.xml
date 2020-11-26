@@ -4,30 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.home.HomeFragment"
+    android:background="#292242">
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
         app:columnCount="2"
         app:rowCount="3">
-
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             app:layout_column="0"
             app:layout_columnWeight="1"
             app:layout_row="0"
             app:layout_rowWeight="1">
-
             <Button
                 android:id="@+id/buttonOut"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:backgroundTint="@android:color/holo_green_light"
+                style="@style/button_main"
+                android:background="@drawable/bcf"
                 android:text="@string/main_out"
                 android:textColor="@android:color/primary_text_dark"
-                android:textSize="36sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -70,37 +69,18 @@
             app:layout_columnWeight="1"
             app:layout_row="0"
             app:layout_rowWeight="1">
-
             <Button
                 android:id="@+id/buttonPutaway"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:backgroundTint="@color/colorAccent"
+                style="@style/button_main"
+                android:background="@drawable/yellow"
                 android:text="@string/main_Putaway"
+                android:layout_marginEnd="12dp"
                 android:textColor="@android:color/primary_text_dark"
-                android:textSize="36sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/badgePutaway"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="@color/colorAccent"
-                android:paddingStart="4dip"
-                android:paddingTop="2dip"
-                android:paddingEnd="4dip"
-                android:paddingBottom="2dip"
-                android:text="@string/main_newString"
-                android:textColor="@android:color/primary_text_dark"
-                android:translationZ="2dip"
-                android:visibility="invisible"
-                app:layout_constraintEnd_toEndOf="@id/buttonPutaway"
-                app:layout_constraintTop_toTopOf="@id/buttonPutaway" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -110,76 +90,79 @@
             app:layout_columnWeight="1"
             app:layout_row="1"
             app:layout_rowWeight="1">
-
             <Button
                 android:id="@+id/buttonMove"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:backgroundTint="@android:color/holo_blue_light"
+                style="@style/button_main"
+                android:background="@drawable/btc"
                 android:text="@string/main_Move"
                 android:textColor="@android:color/primary_text_dark"
-                android:textSize="36sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/badgeMove"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="@color/colorAccent"
-                android:paddingStart="4dip"
-                android:paddingTop="2dip"
-                android:paddingEnd="4dip"
-                android:paddingBottom="2dip"
-                android:text="@string/main_newString"
-                android:textColor="@android:color/primary_text_dark"
-                android:translationZ="2dip"
-                android:visibility="invisible"
-                app:layout_constraintEnd_toEndOf="@id/buttonMove"
-                app:layout_constraintTop_toTopOf="@id/buttonMove" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <Button
-            android:id="@+id/buttonFind"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/holo_orange_light"
-            android:text="@string/main_Find"
-            android:textColor="@android:color/primary_text_dark"
-            android:textSize="36sp"
             app:layout_column="0"
             app:layout_columnWeight="1"
             app:layout_row="2"
-            app:layout_rowWeight="1" />
-        <Button
-            android:id="@+id/buttonSetting"
+            app:layout_rowWeight="1">
+
+            <Button
+                android:id="@+id/buttonFind"
+                style="@style/button_main"
+                android:background="@drawable/btj"
+                android:text="@string/main_Find"
+                android:textColor="@android:color/primary_text_dark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/holo_orange_dark"
-            android:text="@string/main_Setting"
-            android:textColor="@android:color/primary_text_dark"
-            android:textSize="36sp"
             app:layout_column="1"
             app:layout_columnWeight="1"
             app:layout_row="1"
-            app:layout_rowWeight="1" />
+            app:layout_rowWeight="1">
         <Button
-            android:id="@+id/buttonExit"
+            android:id="@+id/buttongetstork"
+            style="@style/button_main"
+            android:background="@drawable/btd"
+            android:text="入库"
+            android:layout_marginEnd="12dp"
+
+            android:textColor="@android:color/primary_text_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/holo_red_light"
-            android:text="@string/main_Exit"
-            android:textColor="@android:color/primary_text_dark"
-            android:textSize="36sp"
             app:layout_column="1"
             app:layout_columnWeight="1"
             app:layout_row="2"
-            app:layout_rowWeight="1" />
+            app:layout_rowWeight="1">
+            <Button
+                android:id="@+id/buttonSetting"
+                style="@style/button_main"
+                android:background="@drawable/pink"
+                android:text="@string/main_Setting"
+                android:layout_marginEnd="12dp"
+                android:textColor="@android:color/primary_text_dark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.gridlayout.widget.GridLayout>
 

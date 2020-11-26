@@ -42,7 +42,7 @@ public class SupplierMainFragment extends Fragment {
 
     private void initSupplicer() {
         supplierBind = viewSupplicer.findViewById(R.id.buttonbinding);
-        supplierout = viewSupplicer.findViewById(R.id.buttonSuppliersout);
+        supplierout = viewSupplicer.findViewById(R.id.button_main_move);
         supplierBind.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -3,34 +3,113 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:apps="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorStyle"
     tools:context=".ui.supplier.SupplierMainFragment">
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:orientation="vertical">
-       <Button
-           android:id="@+id/buttonbinding"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_weight="0.3"
-           android:layout_gravity="center"
-           android:backgroundTint="@android:color/holo_orange_light"
-           android:text="绑定"
-           android:textColor="@android:color/primary_text_dark"
-           android:textSize="36sp" />
-       <Button
-           android:id="@+id/buttonSuppliersout"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_weight="0.3"
-           android:layout_gravity="center"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20px"
+        android:layout_marginStart="18px"
+        android:layout_marginEnd="18px"
+        android:layout_marginBottom="20px">
 
-           android:backgroundTint="@android:color/holo_orange_dark"
-           android:text="@string/main_out"
-           android:textColor="@android:color/primary_text_dark"
-           android:textSize="36sp" />
-   </LinearLayout>
+        <Button
+            style="@style/button_main_support"
+            android:id="@+id/button_main_out"
+            android:layout_width="210px"
+            android:layout_height="230px"
+            android:text="@string/main_out"
+            android:gravity="center"
+            android:background="@drawable/bcf"
+            apps:layout_constraintTop_toTopOf="parent"
+            apps:layout_constraintStart_toStartOf="parent"/>
+        <Button
+            style="@style/button_main_support"
+            android:id="@+id/button_main_get"
+            android:layout_width="210px"
+            android:layout_height="200px"
+            android:layout_marginStart="22px"
+            android:background="@drawable/yellow"
+            android:gravity="center"
+            android:text="@string/main_Putaway"
+            apps:layout_constraintTop_toTopOf="@+id/button_main_out"
+            apps:layout_constraintStart_toEndOf="@+id/button_main_out" />
+
+        <Button
+            style="@style/button_main_support"
+            android:id="@+id/button_main_move"
+            android:layout_marginTop="20px"
+            android:layout_width="210px"
+            android:layout_height="200px"
+            android:gravity="center"
+            android:text="@string/main_Move"
+            android:background="@drawable/btc"
+            apps:layout_constraintStart_toStartOf="parent"
+            apps:layout_constraintTop_toBottomOf="@+id/button_main_out"/>
+        <Button
+            style="@style/button_main_support"
+            android:id="@+id/button_main_Seeting"
+            android:layout_width="210px"
+            android:layout_height="180px"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:background="@drawable/pink"
+            android:text="@string/main_Setting"
+            apps:layout_constraintStart_toStartOf="parent"
+            apps:layout_constraintTop_toBottomOf="@+id/button_main_move" />
+
+        <Button
+            style="@style/button_main_support"
+            android:id="@+id/buttonbinding"
+            android:layout_marginTop="20px"
+            android:layout_width="210px"
+            android:layout_height="230px"
+            android:text="入库"
+            android:background="@drawable/btd"
+            apps:layout_constraintTop_toBottomOf="@+id/button_main_get"
+            apps:layout_constraintStart_toStartOf="@+id/button_main_get"/>
+        <Button
+            style="@style/button_main_support"
+            android:id="@+id/button_main_find"
+            android:layout_width="210px"
+            android:layout_height="180px"
+            android:text="@string/main_Find"
+            android:background="@drawable/btj"
+            apps:layout_constraintTop_toTopOf="@+id/button_main_Seeting"
+            apps:layout_constraintStart_toStartOf="@+id/buttonbinding"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--   <LinearLayout-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="match_parent"-->
+<!--       android:orientation="vertical">-->
+<!--       <Button-->
+<!--           android:id="@+id/buttonbinding"-->
+<!--           android:layout_width="wrap_content"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:layout_weight="0.3"-->
+<!--           android:layout_gravity="center"-->
+<!--           android:backgroundTint="@android:color/holo_orange_light"-->
+<!--           android:text="绑定"-->
+<!--           android:textColor="@android:color/primary_text_dark"-->
+<!--           android:textSize="36sp" />-->
+<!--       <Button-->
+<!--           android:id="@+id/buttonSuppliersout"-->
+<!--           android:layout_width="wrap_content"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:layout_weight="0.3"-->
+<!--           android:layout_gravity="center"-->
+
+<!--           android:backgroundTint="@android:color/holo_orange_dark"-->
+<!--           android:text="@string/main_out"-->
+<!--           android:textColor="@android:color/primary_text_dark"-->
+<!--           android:textSize="36sp" />-->
+<!--   </LinearLayout>-->
 
 
 
